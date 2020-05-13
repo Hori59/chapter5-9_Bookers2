@@ -24,9 +24,9 @@
               <li><%= link_to " login", new_user_session_path, class: "glyphicon glyphicon-log-in sign_in" %></li>
             <% else %>
               <li><%= link_to " Home", user_path(current_user.id), class: "glyphicon glyphicon-home home" %></li>
-              <li><%= link_to " Users", user_path(current_user.id), class: "glyphicon glyphicon-user users" %></li>
-              <li><%= link_to " Books", user_path(current_user.id), class: "glyphicon glyphicon-book books" %></li>
-              <li><%= link_to " logout", user_path(current_user.id), class: "glyphicon glyphicon-log-out logout" %></li>
+              <li><%= link_to " Users", root_path, class: "glyphicon glyphicon-user users" %></li>
+              <li><%= link_to " Books", root_path, class: "glyphicon glyphicon-book books" %></li>
+              <li><%= link_to " logout", root_path, class: "glyphicon glyphicon-log-out logout" %></li>
             <% end %>
           </ul>
         </nav>
