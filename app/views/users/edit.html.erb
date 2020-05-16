@@ -1,0 +1,24 @@
+<div class="container">
+  <p id="notice"></p>
+  <h2>User info</h2>
+  <%= form_for (@user) do |f| %>
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name, autofocus: true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :profile_image %>
+      <%= f.attachment_field :profile_image, placeholder: "プロフィール画像", class: "user-edit-form" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :introduction %>
+      <%= f.text_area :introduction, autofocus: true %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Update User", class:"btn btn-lg btn-block btn-base-1 mt-20" %>
+    </div>
+  <% end %>
+</div>

@@ -31,6 +31,11 @@ body {
   background-color: #fff;
 }
 
+.fallback {
+  height: 40px;
+  width: 40px;
+}
+
 /*ヘッダー*/
 header {
   color: white;
@@ -98,7 +103,6 @@ a:visited {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
