@@ -13,10 +13,9 @@ class ApplicationController < ActionController::Base
     user_path(resource)
   end
 
-  private
-  def ensure_correct_user
-    if current_user.id !=  params[:id].to_i
-       redirect_to user_path(params)
+  def forbid_login_user
+    if current_user
+      redirect_to user_path(current_user)
     end
   end
 
